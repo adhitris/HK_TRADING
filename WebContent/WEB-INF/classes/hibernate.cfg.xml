@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<mapping class="com.hk.base.entity.AccessUser" />
+		<mapping class="com.hk.base.entity.AccessUserID" />
+		
+		<mapping class="com.hk.base.entity.MataUang" />
+		<mapping class="com.hk.base.entity.Module" />
+		<mapping class="com.hk.base.entity.Unit" />
+		<mapping class="com.hk.base.entity.User" />
+		
+	</session-factory>
+</hibernate-configuration>

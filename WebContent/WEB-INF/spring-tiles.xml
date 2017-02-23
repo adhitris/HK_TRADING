@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<!-- ========================= START BASE TILES =========================== -->
+
+	
+	<definition name="harapanKurniaBaseLayout"
+		template="/WEB-INF/jsp/common/template/maintemplate.jsp">
+		<put-attribute name="title" value="HK" />
+		<put-attribute name="navigation"
+			value="/WEB-INF/jsp/common/template/navigation.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/jsp/common/template/footer.jsp" />
+		
+	</definition>
+	<definition name="common.error" template="/WEB-INF/jsp/common/exceptionviewer.jsp">
+	</definition>
+
+
+	<!-- ========================= MASTER DATA =========================== -->
+
+
+	<definition name="master.list_user" extends="harapanKurniaBaseLayout">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/master/user/user_search.jsp" />
+	</definition>
+	
+	<definition name="master.user_add" extends="harapanKurniaBaseLayout">
+		<put-attribute name="content" value="/WEB-INF/jsp/master/user/user_add.jsp" />
+	</definition>
+	
+	<definition name="master.unit_add" extends="harapanKurniaBaseLayout">
+		<put-attribute name="content" value="/WEB-INF/jsp/master/unit/unit_add.jsp" />
+	</definition>
+
+	<definition name="master.unit_search" extends="harapanKurniaBaseLayout">
+		<put-attribute name="content" value="/WEB-INF/jsp/master/unit/unit_search.jsp" />
+	</definition>
+
+	<definition name="master.module_add" extends="harapanKurniaBaseLayout">
+		<put-attribute name="content" value="/WEB-INF/jsp/master/module/module_add.jsp" />
+	</definition>
+
+	<definition name="master.module_search" extends="harapanKurniaBaseLayout">
+		<put-attribute name="content" value="/WEB-INF/jsp/master/module/module_search.jsp" />
+	</definition>
+	
+	<definition name="master.mata_uang_add" extends="harapanKurniaBaseLayout">
+		<put-attribute name="content" value="/WEB-INF/jsp/master/mataUang/mata_uang_add.jsp" />
+	</definition>
+
+	<definition name="master.mata_uang_search" extends="harapanKurniaBaseLayout">
+		<put-attribute name="content" value="/WEB-INF/jsp/master/mataUang/mata_uang_search.jsp" />
+	</definition>
+	
+	<definition name="master.add_access_user" extends="harapanKurniaBaseLayout">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/master/accessuser/accessuser_add.jsp" />
+	</definition>
+	
+	<definition name="master.accessuser_search" extends="harapanKurniaBaseLayout">
+		<put-attribute name="content" value="/WEB-INF/jsp/master/accessuser/accessuser_search.jsp" />
+	</definition>
+	
+	<definition name="home.danied" template="/WEB-INF/jsp/common/accessdenied.jsp" />
+	<definition name="home.login" template="/WEB-INF/jsp/home/login.jsp" />
+	
+	<definition name="home.index" extends="harapanKurniaBaseLayout">
+	</definition>
+	
+</tiles-definitions>
+
